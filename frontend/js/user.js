@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const bcrypt = require('bcrypt')
 
-var cs = process.env.MONGO_CONNECTION_STRING || '';
+var cs = process.env.MONGO_CONNECTION_STRING || 'mongodb+srv://cluster0.uapdk.mongodb.net/myFirstDatabase';
 mongoose.connect(cs,{useNewUrlParser:true,useUnifiedTopology:true,useCreateIndex:true});
 var db = mongoose.connection;
 db.on('connected', function() {
