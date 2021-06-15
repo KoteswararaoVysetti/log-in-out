@@ -46,7 +46,7 @@ app.get("/", sessionChecker, (req, res) => {
 app
   .route("/signup")
   .get(sessionChecker, (req, res) => {
-    res.sendFile(__dirname + "/frontend/html/signup.html");
+    res.sendFile(__dirname + "/frontend/html/register.html");
   })
   .post((req, res) => {
 
